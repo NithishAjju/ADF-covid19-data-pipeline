@@ -1,0 +1,14 @@
+{
+	"name": "ls_db_covid_cluster",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "https://adb-7405618273510450.10.azuredatabricks.net",
+			"authentication": "MSI",
+			"workspaceResourceId": "/subscriptions/76a161cb-2d39-4612-b696-4757361d55d1/resourceGroups/covid-reporting-rg/providers/Microsoft.Databricks/workspaces/covid-reporting-ws-2627",
+			"existingClusterId": "0619-165516-gzthlpsr"
+		}
+	}
+}

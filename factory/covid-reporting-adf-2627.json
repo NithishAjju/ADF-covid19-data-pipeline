@@ -1,0 +1,15 @@
+{
+	"name": "covid-reporting-adf-2627",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "121e07fb-2c30-4a20-b2f1-11326e1045a0",
+		"tenantId": "0c36d0c1-8906-49a4-b1da-a3cecba4d460"
+	}
+}
