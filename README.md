@@ -19,35 +19,6 @@ The project showcases a modern cloud-based ETL architecture commonly used in ent
 </p>
 
 
-```
-                   +----------------------+
-                   |   External Sources   |
-                   |----------------------|
-                   | ECDC HTTP API        |
-                   | Azure Blob Storage   |
-                   +----------+-----------+
-                              |
-                              v
-                 Azure Data Factory Pipelines
-                              |
-              +---------------+---------------+
-              |                               |
-              |                               |
-              v                               v
-      Mapping Data Flows            Azure Databricks
-                                      (PySpark)
-              |                               |
-              +---------------+---------------+
-                              |
-                              v
-                  Azure Data Lake Storage Gen2
-                              |
-                              v
-                    Azure SQL Database
-                              |
-                              v
-                          Power BI
-```
 
 ---
 
@@ -171,65 +142,12 @@ Power BI connects to Azure SQL Database to create interactive dashboards for ana
 
 ---
 
-# Repository Structure
 
-```
-covid-reporting-project/
-│
-├── databricks notebooks/
-│   ├── transform_population_data.py
-│   └── covid_setup
-│
-├── dataflow/
-│
-├── dataset/
-│
-├── factory/
-│
-├── linkedService/
-│
-├── pipeline/
-│
-├── power_bi_reports/
-│
-├── raw_data/
-│
-├── trigger/
-│
-├── publish_config.json
-│
-└── README.md
-```
 
----
 
-# ETL Pipeline
 
-```
-HTTP API
-        \
-         \
-          --> Azure Data Factory
-                    |
-                    |
-         --------------------------
-         |                        |
-         |                        |
-ADF Mapping Data Flows      Databricks PySpark
-         |                        |
-         --------------------------
-                    |
-                    |
-          Azure Data Lake Storage
-                    |
-                    |
-            Azure SQL Database
-                    |
-                    |
-                 Power BI
-```
 
----
+
 
 # Features
 
