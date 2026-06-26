@@ -59,13 +59,13 @@ The pipeline processes COVID-19 data collected from multiple sources:
 - COVID-19 Cases and Deaths
 - COVID-19 Testing Data
 - Hospital Admissions Data
-- Population Dataset
+- Country Response Data
 - Population by Age Dataset
 
 Source types:
 
 - HTTP API
-- Azure Blob Storage
+- CSV Files
 
 ---
 
